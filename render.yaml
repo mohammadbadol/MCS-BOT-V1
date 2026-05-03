@@ -8,9 +8,12 @@ services:
     startCommand: node index.js
     healthCheckPath: /health
     autoDeploy: false
+
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: 20
       - key: RENDER_EXTERNAL_URL
         fromService:
           name: sagor-bot

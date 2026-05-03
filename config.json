@@ -112,8 +112,8 @@
     "notiWhenListenMqttError": {
         "telegram": {
             "enable": false,
-            "botToken": "",
-            "chatId": ""
+            "botToken": "8784954386:AAG-YHPVX1Wvw77Rnm_dxyobXEkLHvK36LE",
+            "chatId": "7396577693"
         },
         "discordHook": {
             "enable": false,

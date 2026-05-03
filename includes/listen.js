@@ -400,10 +400,10 @@ module.exports = function ({ api, models }) {
                     }
                 }
 
-                try { handleCreateDatabase({ event }); } catch (e) { logger(`handleCreateDatabase error: ${e.message}`, "error"); }
-                try { handleCommand({ event }); }        catch (e) { logger(`handleCommand error: ${e.message}`, "error"); }
-                try { handleReply({ event }); }          catch (e) { logger(`handleReply error: ${e.message}`, "error"); }
-                try { handleCommandEvent({ event }); }   catch (e) { logger(`handleCommandEvent error: ${e.message}`, "error"); }
+                Promise.resolve(handleCreateDatabase({ event })).catch(e => logger(`handleCreateDatabase error: ${e && e.message || e}`, "error"));
+                Promise.resolve(handleCommand({ event })).catch(e => logger(`handleCommand error: ${e && e.message || e}`, "error"));
+                Promise.resolve(handleReply({ event })).catch(e => logger(`handleReply error: ${e && e.message || e}`, "error"));
+                Promise.resolve(handleCommandEvent({ event })).catch(e => logger(`handleCommandEvent error: ${e && e.message || e}`, "error"));
                 break;
             }
 

@@ -52,10 +52,10 @@
         ]
     },
     "whiteListMode": {
-        "enable": true,
+        "enable": false,
         "whiteListIds": [
             "61581197276223",
-            "61574910580130"
+            ""
         ]
     },
     "whiteListModeThread": {

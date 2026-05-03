@@ -164,12 +164,25 @@ if (config.serverUptime && config.serverUptime.enable) {
   }
 }
 
-// FIX: Keep-alive self-ping
-const SELF_URL = process.env.RENDER_EXTERNAL_URL || process.env.APP_URL || null;
+// 24/7 Keep-alive self-ping — Render & Railway
+const SELF_URL = process.env.RENDER_EXTERNAL_URL
+  || process.env.RAILWAY_STATIC_URL
+  || process.env.APP_URL
+  || null;
+
 if (SELF_URL) {
+  const pingUrl = SELF_URL.startsWith("http") ? SELF_URL : `https://${SELF_URL}`;
   setInterval(async () => {
-    try { await axios.get(`${SELF_URL}/health`, { timeout: 8000 }); } catch (_) {}
+    try {
+      await axios.get(`${pingUrl}/health`, { timeout: 8000 });
+      logger(`Self-ping OK → ${pingUrl}/health`, "[ UPTIME ]");
+    } catch (e) {
+      logger(`Self-ping failed: ${e.message}`, "[ UPTIME ]");
+    }
   }, 4 * 60 * 1000);
+  logger(`24/7 self-ping enabled → ${pingUrl}`, "[ UPTIME ]");
+} else {
+  logger("Self-ping disabled — RENDER_EXTERNAL_URL বা APP_URL set করো", "[ UPTIME ]");
 }
 
 app.listen(port, "0.0.0.0", () => {

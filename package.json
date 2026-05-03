@@ -94,7 +94,7 @@
     "readline": "^1.3.0",
     "request": "^2.88.2",
     "sagor-video-downloader": "^1.2.1",
-    "sahu-fca": "^11.0.1",
+    "sagor-fca": "^0.0.20",
     "semver": "^7.7.4",
     "sequelize": "^6.37.8",
     "simple-youtube-api": "^5.2.1",

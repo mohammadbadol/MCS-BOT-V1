@@ -17,8 +17,12 @@ module.exports = function ({ api, models }) {
        config: spamProtection.commandThreshold, timeWindow, banDuration
     ═══════════════════════════════════════ */
 
-    const spamTracker = new Map(); // senderID → { count, firstTime }
-    const spamBanned  = new Map(); // senderID → bannedUntil timestamp
+    global.spamTracker = global.spamTracker || new Map(); // senderID → { count, firstTime }
+    global.spamBanned  = global.spamBanned  || new Map(); // senderID → bannedUntil timestamp
+    global.spamWarned  = global.spamWarned  || new Set(); // senderID → warned once flag
+    const spamTracker  = global.spamTracker;
+    const spamBanned   = global.spamBanned;
+    const spamWarned   = global.spamWarned;
 
     function checkSpam(senderID) {
         const cfg       = global.config.spamProtection || {};
@@ -33,8 +37,9 @@ module.exports = function ({ api, models }) {
         const now = Date.now();
 
         if (spamBanned.has(senderID)) {
-            if (now < spamBanned.get(senderID)) return true;
+            if (now < spamBanned.get(senderID)) return true; // silently blocked
             spamBanned.delete(senderID);
+            spamWarned.delete(senderID); // ban expired, reset warned flag
         }
 
         const rec = spamTracker.get(senderID) || { count: 0, firstTime: now };
@@ -46,7 +51,7 @@ module.exports = function ({ api, models }) {
             if (rec.count >= threshold) {
                 spamBanned.set(senderID, now + banMs);
                 spamTracker.delete(senderID);
-                return true;
+                return "newban"; // first time banned → send warning once
             }
         }
         spamTracker.set(senderID, rec);
@@ -340,14 +345,16 @@ module.exports = function ({ api, models }) {
                 if (!isAllowedThread(threadID, isGroup)) return;
 
                 // ── spamProtection ────────────────────────────
-                if (event.type !== "message_unsend" && checkSpam(senderID)) {
-                    try {
-                        api.sendMessage(
-                            "⚠️ You are sending commands too fast! Please slow down.",
-                            threadID
-                        );
-                    } catch (_) {}
-                    return;
+                if (event.type !== "message_unsend") {
+                    const spamResult = checkSpam(senderID);
+                    if (spamResult === "newban") {
+                        // First time banned → warn once
+                        try { api.sendMessage("⚠️ You are sending commands too fast! You have been banned.", threadID); } catch (_) {}
+                        return;
+                    } else if (spamResult === true) {
+                        // Already banned → silent block, no message
+                        return;
+                    }
                 }
 
                 // ── typingIndicator ───────────────────────────

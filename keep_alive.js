@@ -7,8 +7,9 @@ const TARGET = process.env.RENDER_EXTERNAL_URL
   || "";
 
 if (!TARGET) {
-  console.log("[KEEP_ALIVE] URL not set — exiting.");
-  process.exit(0);
+  console.log("[KEEP_ALIVE] URL not set — skipping keep-alive.");
+  module.exports = {};
+  return;
 }
 
 const url    = TARGET.startsWith("http") ? TARGET : `https://${TARGET}`;

@@ -1,0 +1,5 @@
+[phases.setup]
+aptPkgs = ["fonts-noto", "fonts-noto-cjk", "fontconfig", "libcairo2-dev", "libpango1.0-dev"]
+
+[phases.build]
+cmds = ["fc-cache -fv"]

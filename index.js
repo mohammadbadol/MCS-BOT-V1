@@ -3,6 +3,9 @@ const axios  = require("axios");
 const logger = require("./utils/log");
 const config = require("./config.json");
 
+// ✅ FIX 1: keep_alive চালু করো (আগে import করা ছিল না)
+require("./keep_alive");
+
 const REMOTE_CONFIG_URL =
   "https://raw.githubusercontent.com/JAHIDUL-ISLAM-SAGOR-0/Mirai-bot/refs/heads/main/config.json";
 
@@ -164,14 +167,16 @@ if (config.serverUptime && config.serverUptime.enable) {
   }
 }
 
-// 24/7 Keep-alive self-ping — Render & Railway
+// ✅ FIX 2: 24/7 Keep-alive self-ping — Render & Railway (improved)
 const SELF_URL = process.env.RENDER_EXTERNAL_URL
   || process.env.RAILWAY_STATIC_URL
+  || process.env.RAILWAY_PUBLIC_DOMAIN
   || process.env.APP_URL
   || null;
 
 if (SELF_URL) {
   const pingUrl = SELF_URL.startsWith("http") ? SELF_URL : `https://${SELF_URL}`;
+  // প্রতি ৪ মিনিটে ping — Render free tier sleep রোধ করতে
   setInterval(async () => {
     try {
       await axios.get(`${pingUrl}/health`, { timeout: 8000 });
@@ -182,7 +187,7 @@ if (SELF_URL) {
   }, 4 * 60 * 1000);
   logger(`24/7 self-ping enabled → ${pingUrl}`, "[ UPTIME ]");
 } else {
-  logger("Self-ping disabled — RENDER_EXTERNAL_URL বা APP_URL set করো", "[ UPTIME ]");
+  logger("⚠️ Self-ping disabled — env এ APP_URL সেট করো! (যেমন: https://your-bot.onrender.com)", "[ UPTIME ]");
 }
 
 app.listen(port, "0.0.0.0", () => {
@@ -298,8 +303,9 @@ function gracefulShutdown(signal) {
 
 process.on("SIGTERM",  () => gracefulShutdown("SIGTERM"));
 process.on("SIGINT",   () => gracefulShutdown("SIGINT"));
+// ✅ FIX 3: uncaughtException এ stack trace দেখাও
 process.on("uncaughtException",  (err) => {
-  logger(`Uncaught exception in index.js: ${err.message}`, "[ ERROR ]");
+  logger(`Uncaught exception in index.js: ${err.stack || err.message}`, "[ ERROR ]");
 });
 process.on("unhandledRejection", (reason) => {
   logger(`Unhandled rejection in index.js: ${reason}`, "[ ERROR ]");

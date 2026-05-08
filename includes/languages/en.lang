@@ -1,94 +1,94 @@
-# SaGor.js 
+# SaGor.js
 
-mirai.errorFormat=「 ᴍᴀʟғᴏʀᴍᴇᴅ ᴍᴏᴅᴜʟᴇ! 」
-mirai.nameExist=「 ᴍᴏᴅᴜʟᴇ's ɴᴀᴍᴇ ɪs sɪᴍɪʟᴀʀ ᴛᴏ ᴀɴᴏᴛʜᴇʀ ᴍᴏᴅᴜʟᴇ! 」
-mirai.notFoundLanguage=「 ᴍᴏᴅᴜʟᴇ %1 ᴅᴏɴ'ᴛ sᴜᴘᴘᴏʀᴛ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇ 」
-mirai.notFoundPackage=「 ᴄᴀɴ'ᴛ ғɪɴᴅ ᴘᴀᴄᴋᴀɢᴇ 「 %1 」 sᴜᴘᴘᴏʀᴛ ғᴏʀ ᴍᴏᴅᴜʟᴇ 「 %2 」 ɪɴsᴛᴀʟʟɪɴɢ... 」
-mirai.cantInstallPackage=「 ᴄᴀɴ'ᴛ ɪɴsᴛᴀʟʟ ᴘᴀᴄᴋᴀɢᴇ %1 ғᴏʀ ᴍᴏᴅᴜʟᴇ %2, ᴇʀʀᴏʀ: %3 」
-mirai.loadedPackage=「 ɪɴsᴛᴀʟʟᴇᴅ ᴡʜᴏʟᴇ ᴘᴀᴄᴋᴀɢᴇ sᴜᴄᴄᴇssғᴜʟʟʏ ғᴏʀ ᴍᴏᴅᴜʟᴇ %1 」
-mirai.loadedConfig=「 ɪɴsᴛᴀʟʟᴇᴅ ᴄᴏɴғɪɢ sᴜᴄᴄᴇssғᴜʟʟʏ ғᴏʀ ᴍᴏᴅᴜʟᴇ %1 」
-mirai.cantLoadConfig=「 ᴄᴀɴ'ᴛ ɪɴsᴛᴀʟʟ ᴄᴏɴғɪɢ ᴏғ ᴍᴏᴅᴜʟᴇ「 %1 」, ᴇʀʀᴏʀ:「 %2 」
-mirai.cantOnload=「 ᴄᴀɴ'ᴛ ʟᴀᴜɴᴄʜ sᴇᴛᴜᴘ ᴏғ ᴍᴏᴅᴜʟᴇ「 %1 」, ᴇʀʀᴏʀ:「 %1 」
-mirai.successLoadModule=「 sᴜᴄᴄᴇssғᴜʟʟʏ ɪɴsᴛᴀʟʟᴇᴅ ᴍᴏᴅᴜʟᴇ %1 」
-mirai.failLoadModule=「 ᴄᴀɴ'ᴛ ɪɴsᴛᴀʟʟ ᴍᴏᴅᴜʟᴇ「 %1 」, ᴇʀʀᴏʀ:「 %2 」
-mirai.finishLoadModule=「 ɪɴsᴛᴀʟʟᴇᴅ「 %1 」ᴍᴏᴅᴜʟᴇ ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ「 %2 」ᴍᴏᴅᴜʟᴇ ᴇᴠᴇɴᴛs sᴜᴄᴄᴇssғᴜʟʟʏ 」 
-mirai.foundPathAppstate=「 ғᴏᴜɴᴅ ғɪʟᴇ ᴀᴘᴘsᴛᴀᴛᴇ 」
-mirai.notFoundPathAppstate=「 ᴄᴀɴ'ᴛ ғɪɴᴅ ғɪʟᴇ ᴀᴘᴘsᴛᴀᴛᴇ 」
-mirai.checkListGban=「 ᴄʜᴇᴋɪɴɢ ɢʟᴏʙᴀʟ ʙᴀɴ ʟɪsᴛ... 」
-mirai.banDevice=「 ʏᴏᴜʀ ᴅᴇᴠɪᴄᴇ ʜᴀᴠᴇ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴍɪʀᴀɪᴘʀᴏᴊᴇᴄᴛ, ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ғᴀᴄᴇʙᴏᴏᴋ fb.com/SAGOR.69x ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴏʀ ᴀsᴋɪɴɢ ғᴏʀ ᴜɴʙᴀɴ ᴋᴇʏ, ɪғ ʏᴏᴜ ᴀʟʀᴇᴀᴅʏ ʜᴀᴠᴇ ᴜɴʙᴀɴ ᴋᴇʏ, ᴘʟᴇᴀsᴇ ғɪʟʟ ɪᴛ ʙᴇʟᴏᴡ. 」
-mirai.keyNotSameFormat=「 ᴡʀᴏɴɢ ғᴏʀᴍᴀᴛ, ᴄᴏᴅᴇ ᴍᴜsᴛ ᴄᴏɴᴛᴀɪɴ「 %6 」ɴᴜᴍʙᴇʀ. 」
-mirai.codeInputExpired=「 ʏᴏᴜʀ ᴄᴏᴅᴇ ɪs ᴡʀᴏɴɢ ᴏʀ ᴏᴜᴛ ᴏғ ᴅᴀᴛᴇ. 」
-mirai.unbanDeviceSuccess=「 ʏᴏᴜʀ ᴅᴇᴠɪᴄᴇ ᴀʀᴇ ᴜɴʙᴀɴ ɴᴏᴡ, ᴘʟᴇᴀsᴇ ʀᴇsᴛᴀʀᴛ ᴛᴏ ᴜsᴇ.
-ᴍɪʀᴀɪ.ᴜsᴇʀʙᴀɴɴᴇᴅ=ʏᴏᴜ ʜᴀᴅ ʙᴇᴇɴ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴍɪʀᴀɪᴘʀᴏᴊᴇᴄᴛ ᴡʜᴇɴ「 %1 」ᴡɪᴛʜ ʀᴇᴀsᴏɴ:「 %2」. ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ғᴀᴄᴇʙᴏᴏᴋ fb.com/SAGOR.69x ᴛᴏ ʜᴀᴠᴇ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ! 」
-mirai.finishCheckListGban=「 ᴄʜᴇᴄᴋᴇᴅ ɢʟᴏʙᴀʟ ʙᴀɴ ʟɪsᴛ 」
-mirai.handleListenError=「 ʜᴀɴᴅʟᴇʟɪsᴛᴇɴᴇ ʜᴀs ᴏᴄᴄᴜʀʀᴇᴅ sᴏᴍᴇ ᴜɴᴇxᴘᴇᴄᴛᴇᴅ ᴇʀʀᴏʀʀ, ᴇʀʀᴏʀ :「 %1 」
-mirai.warningSourceCode=「 ᴅᴇᴛᴇᴄᴛᴇᴅ ᴛʜᴀᴛ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ's sᴛʀᴜᴄᴛᴜʀᴇ ʜᴀᴅ ʙᴇᴇɴ ᴄʜᴀɴɢᴇᴅ , sᴛᴏᴘ ɴᴏᴡ! 」
-mirai.refreshListen=「 ʀᴇғʀᴇsʜᴇᴅ ʜᴀɴᴅʟᴇʟɪsᴛᴇɴᴇʀ... 」
-mirai.successConnectDatabase=「 ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ sᴜᴄᴄᴇssғᴜʟʟʏ! 」
-mirai.failConnectDatabase=「 ғᴀɪʟᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ᴅᴀᴛᴀʙᴀsᴇ, ᴇʀʀᴏʀ:「 %1 」
+mirai.errorFormat= "Malformed module!"
+mirai.nameExist= "Module's name is similar to another module!"
+mirai.notFoundLanguage= "Module %1 don't support your language"
+mirai.notFoundPackage= "Can't find package 「 %1 」 support for module 「 %2 」 installing..."
+mirai.cantInstallPackage= "Can't install package %1 for module %2, error: %3"
+mirai.loadedPackage= "Installed whole package successfully for module %1"
+mirai.loadedConfig= "Installed config successfully for module %1"
+mirai.cantLoadConfig= "Can't install config of module「 %1 」, error:「 %2 」"
+mirai.cantOnload= "Can't launch setup of module「 %1 」, error:「 %1 」"
+mirai.successLoadModule= "Successfully installed module %1"
+mirai.failLoadModule= "Can't install module「 %1 」, error:「 %2 」"
+mirai.finishLoadModule= "Installed「 %1 」module commands and「 %2 」module events successfully"
+mirai.foundPathAppstate= "Found file appstate"
+mirai.notFoundPathAppstate= "Can't find file appstate"
+mirai.checkListGban= "Checking global ban list..."
+mirai.banDevice= "Your device have been banned from MiraiProject, please contact to Facebook fb.com/SAGOR.69x to know more information or asking for unban key, if you already have unban key, please fill it below."
+mirai.keyNotSameFormat= "Wrong format, code must contain「 %6 」number."
+mirai.codeInputExpired= "Your code is wrong or out of date."
+mirai.unbanDeviceSuccess= "Your device are unban now, please restart to use.\nmirai.userbanned=You had been banned from MiraiProject when「 %1 」with reason:「 %2 」. Please contact to Facebook fb.com/SAGOR.69x to have more information!"
+mirai.finishCheckListGban= "Checked global ban list"
+mirai.handleListenError= "Handlelistene has occurred some unexpected error, error :「 %1 」"
+mirai.warningSourceCode= "Detected that source code's structure had been changed, stop now!"
+mirai.refreshListen= "Refreshed handlelistener..."
+mirai.successConnectDatabase= "Connected to database successfully!"
+mirai.failConnectDatabase= "Failed to connect to database, error:「 %1 」"
 
 # includes/listen.js
 
-listen.startLoadEnvironment=「 ᴘʀᴏᴄᴇᴇᴅ ᴛᴏ ʟᴏᴀᴅ ᴛʜᴇ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ ... 」
-listen.loadedEnvironmentThread=「 ʟᴏᴀᴅᴇᴅ ᴛʜʀᴇᴀᴅ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ 」 
-listen.loadedEnvironmentUser=「 ʟᴏᴀᴅᴇᴅ ᴜsᴇʀ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ 」 
-listen.successLoadEnvironment=「 ʟᴏᴀᴅᴇᴅ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ sᴜᴄᴄᴇssғᴜʟʟʏ 」 
-listen.failLoadEnvironment=「 ᴄᴀɴ'ᴛ ʟᴏᴀᴅ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇ, ᴇʀʀᴏʀ: 「 %1 」
+listen.startLoadEnvironment= "Proceed to load the environment variable ..."
+listen.loadedEnvironmentThread= "Loaded thread environment variable successfully"
+listen.loadedEnvironmentUser= "Loaded user environment variable successfully"
+listen.successLoadEnvironment= "Loaded environment variable successfully"
+listen.failLoadEnvironment= "Can't load environment variable, error: 「 %1 」"
 
 # includes/controller/currencies.js
 
-currencies.needObjectOrArray=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴀʀʀᴀʏ ᴏʀ ᴀɴ ᴏʙᴊᴇᴄᴛ ᴏʀ ᴍᴀʏʙᴇ ʙᴏᴛʜ 」
-handleCommand.userBanned=「 ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴜᴇs ʙᴏᴛ ʏᴏᴜ ᴀʀᴇ ʙᴀɴ! 」
-handleCommand.threadBanned=「 ɢʀᴏᴜᴘ ʜᴀs ʙᴇᴇɴ ʙᴀɴɴᴇᴅ..! 」
-handleCommand.onlyprefix=「 ʜᴇʏ ɪ'ᴍ ʜᴇʀᴇ 」
-handleCommand.noprefix=「 ʜᴇʏ ɪ'ᴍ ʜᴇʀᴇ 」
-handleCommand.commandNotExist=「 ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴅᴏᴇsɴ'ᴛ ᴇxɪsᴛ ʜᴇʀᴇ. ᴡᴇʀᴇ ʏᴏᴜ ᴛʏɪɴɢ ᴛᴏ ᴜsᴇ 」\n\nᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ: 「 %1 」
-handleCommand.commandNotFound=「 ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴅᴏᴇsɴ'ᴛ ᴇxɪsᴛ ʜᴇʀᴇ. ᴡᴇʀᴇ ʏᴏᴜ ᴛʏɪɴɢ ᴛᴏ ᴜsᴇ 」\n\nᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ: 「 %1 」
-handleCommand.commandUserBanned=「 ʏᴏᴜ ᴀʀᴇ ᴜɴᴀʙʟᴇ ᴛᴏ ᴜsᴇ ᴄᴏᴍᴍᴀɴᴅ \n「 %1 」
-handleCommand.commandThreadBanned=「 ᴛʜɪs ɢʀᴏᴜᴘ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ ᴜsᴇ ᴄᴏᴍᴍᴀɴᴅ \n「 %1 」
-handleCommand.threadNotAllowNSFW=「 ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ғᴏʀ ᴏᴡɴᴇʀ 」
-handleCommand.cantGetInfoThread=「 ᴄᴀɴ'ᴛ ɢᴇᴛ ʏᴏᴜʀ ᴛʜʀᴇᴀᴅ's ɪɴғᴏ, ᴇʀʀᴏʀ: \n「 %1 」
-handleCommand.permssionNotEnough=「 "%1" 」\n「 ᴏɴᴇʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ 」
-handleCommand.cantSetMessageReaction=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴜɴᴇxᴘᴇᴄᴛᴇᴅ ᴇʀʀᴏʀ ᴀᴛ sᴇᴛᴍᴇssᴀɢᴇʀᴇᴀᴄᴛɪᴏɴ, ᴇʀʀᴏʀ: 「 %1 」
-handleCommand.executeCommand=「 [ %1 ]\n ᴄᴏᴍᴍᴀɴᴅ ᴜsᴇᴅ:「 %2 」ʙʏ ᴜsᴇʀ:「 %3 」ᴀᴛ ᴛʜʀᴇᴀᴅ:「 %4 」| ᴀʀɢs ɪɴᴄʟᴜᴅᴇᴅ:「 %5 」| ᴘʀᴏᴄᴇssɪɴɢ ᴛɪᴍᴇ: 「 %6ᴍs 」
-handleCommand.commandError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴜɴᴇxᴘᴇᴄᴛᴇᴅ ᴇʀʀᴏʀ ᴡʜᴇɴ ᴜsɪɴɢ ᴄᴏᴍᴍᴀɴᴅ 「 %1 」, ᴇʀʀᴏʀ: 「 %2 」
+currencies.needObjectOrArray= "Have to be an array or an object or maybe both"
+handleCommand.userBanned= "You are not use bot you are ban!"
+handleCommand.threadBanned= "Group has been banned..!"
+handleCommand.onlyprefix= "Hey I'm here"
+handleCommand.noprefix= "Hey I'm here"
+handleCommand.commandNotExist= "This command doesn't exist here. Were you typing to use \n\nDid you mean: 「 %1 」"
+handleCommand.commandNotFound= "This command doesn't exist here. Were you typing to use \n\nDid you mean: 「 %1 」"
+handleCommand.commandUserBanned= "You are unable to use command \n「 %1 」"
+handleCommand.commandThreadBanned= "This group is unable to use command \n「 %1 」"
+handleCommand.threadNotAllowNSFW= "This command only for owner"
+handleCommand.cantGetInfoThread= "Can't get your thread's info, error: \n「 %1 」"
+handleCommand.permissionNotEnough= "%1 \n Only admin can use this command"
+handleCommand.cantSetMessageReaction= "Having some unexpected error at setmessagereaction, error: 「 %1 」"
+handleCommand.executeCommand= "[ %1 ]\n Command used:「 %2 」by user:「 %3 」at thread:「 %4 」| args included:「 %5 」| processing time: 「 %6ms 」"
+handleCommand.commandError= "Having some unexpected error when using command 「 %1 」, error: 「 %2 」"
 
 # includes/handle/handleCommandEvent.js
 
-handleCommandEvent.moduleError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴜɴᴇxᴘᴇᴄᴛᴇᴅ ᴇʀʀᴏʀ ᴡʜᴇɴ ᴜsɪɴɢ ᴄᴏᴍᴍᴀɴᴅ 「 %1 」, ᴇʀʀᴏʀ: 「 %2 」
+handleCommandEvent.moduleError= "Having some unexpected error when using command 「 %1 」, error: 「 %2 」"
 
 # includes/handle/handleCreateDatabase.js
 
-handleCreateDatabase.newThread=「 ɴᴇᴡ ᴛʜʀᴇᴀᴅ:「 %1 」
-handleCreateDatabase.newUser=「 ɴᴇᴡ ᴜsᴇʀ「 %1 」
+handleCreateDatabase.newThread= "New thread:「 %1 」"
+handleCreateDatabase.newUser= "New user「 %1 」"
 
 # includes/handle/handleEvent.js
 
-handleEvent.executeEvent=「 [ %1 ] ᴇᴠᴇɴᴛ ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ:「 %2 」ᴀᴛ ᴛʜʀᴇᴀᴅ:「 %3 」| ᴘʀᴏᴄᴇssɪɴɢ ᴛɪᴍᴇ:「 %4 ᴍs 」
-handleEvent.eventError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴇʀʀᴏʀ ᴡʜᴇɴ ᴇxᴇᴄᴜᴛɪɴɢ ᴇᴠᴇɴᴛ「 %1 」, ᴇʀʀᴏʀ:「 %2 」
+handleEvent.executeEvent= "[ %1 ] event was executed:「 %2 」at thread:「 %3 」| processing time:「 %4 ms 」"
+handleEvent.eventError= "Having some error when executing event「 %1 」, error:「 %2 」"
 
 # includes/handle/handleReaction.js
 
-handleReaction.missingValue=「 ᴍɪssɪɴɢ ᴠᴀʟᴜᴇ ᴛᴏ ʀᴇsᴘᴏɴᴅ ʏᴏᴜʀ ᴘʀᴏʙʟᴇᴍ 」
-handleReaction.executeError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴇʀʀᴏʀ ᴡʜᴇɴ ʀᴇsᴘᴏɴᴅɪɴɢ ʏᴏᴜʀ ᴘʀᴏʙʟᴇᴍ, ᴇʀʀᴏʀ:「 %1 」
+handleReaction.missingValue= "Missing value to respond your problem"
+handleReaction.executeError= "Having some error when responding your problem, error:「 %1 」"
 
 # includes/handle/handleReply.js
 
-handleReply.missingValue=「 ᴍɪssɪɴɢ ᴠᴀʟᴜᴇ ᴛᴏ ʀᴇsᴘᴏɴᴅ ʏᴏᴜʀ ᴘʀᴏʙʟᴇᴍ 」
-handleReply.executeError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴇʀʀᴏʀ ᴡʜᴇɴ ʀᴇsᴘᴏɴᴅɪɴɢ ʏᴏᴜʀ ᴘʀᴏʙʟᴇᴍ, ᴇʀʀᴏʀ:「 %1 」
+handleReply.missingValue= "Missing value to respond your problem"
+handleReply.executeError= "Having some error when responding your problem, error:「 %1 」"
 
 # includes/handle/handleSchedule.js
 
-handleSchedule.exectuteError=「 ʜᴀᴠɪɴɢ sᴏᴍᴇ ᴇʀʀᴏʀ ᴡʜᴇɴ sᴄʜᴇᴅᴜʟᴇ ᴀᴛ ᴍᴏᴅᴜʟᴇ「 %1 」, ᴇʀʀᴏʀ:「 %2 」
+handleSchedule.executeError= "Having some error when schedule at module「 %1 」, error:「 %2 」"
 
 # utils/index.js
 
-utils.throwError=「 [!] ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ɪs ɴᴏᴛ sʏɴᴛᴀx ᴄᴏʀʀᴇᴄᴛ, ᴘʟᴇᴀsᴇ ᴜsᴇ「 %1 」ʜᴇʟᴘ「 %2 」ғᴏʀ ᴍᴏʀᴇ ᴜsᴀɢᴇ ᴅᴇᴛᴀɪʟs 」
+utils.throwError= "[!] The command you are using is not syntax correct, please use「 %1 」help「 %2 」for more usage details"
 
 # Missing controller language keys
-users.needObjectOrArray=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴀʀʀᴀʏ ᴏʀ ᴀɴ ᴏʙᴊᴇᴄᴛ ᴏʀ ᴍᴀʏʙᴇ ʙᴏᴛʜ 」
-users.needObject=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴏʙᴊᴇᴄᴛ 」
-threads.needObjectOrArray=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴀʀʀᴀʏ ᴏʀ ᴀɴ ᴏʙᴊᴇᴄᴛ ᴏʀ ᴍᴀʏʙᴇ ʙᴏᴛʜ 」
-threads.needObject=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴏʙᴊᴇᴄᴛ 」
-currencies.needObject=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀɴ ᴏʙᴊᴇᴄᴛ 」
-currencies.needNumber=「 ʜᴀᴠᴇ ᴛᴏ ʙᴇ ᴀ ɴᴜᴍʙᴇʀ 」
+
+users.needObjectOrArray= "Have to be an array or an object or maybe both"
+users.needObject= "Have to be an object"
+threads.needObjectOrArray= "Have to be an array or an object or maybe both"
+threads.needObject= "Have to be an object"
+currencies.needObject= "Have to be an object"
+currencies.needNumber= "Have to be a number"

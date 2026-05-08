@@ -6,7 +6,7 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "PREFIX": ".",
+    "PREFIX": "/",
     "ADMINBOT": [
         "61572915213085",
         ""

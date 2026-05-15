@@ -2,18 +2,20 @@
     "language": "en",
     "DeveloperMode": false,
     "autoCreateDB": true,
-    "BOTNAME": "⟦  M C S ⸙  B O T  浴  ⟧",
+    "BOTNAME": "⟦ SINGER-SABBIR ⟧",
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
     "PREFIX": "/",
     "ADMINBOT": [
         "1086955587",
-        ""
+        "61567636901283",
+        "61584589984784"
     ],
     "NDH": [
         "1086955587",
-        ""
+        "61567636901283",
+        "61584589984784"
     ],
     "adminOnly": false,
     "ndhOnly": false,
